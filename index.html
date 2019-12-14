@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>9_transform</title>
+        <style type="text/css">
+            *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+        }
+        div{
+            width: 360px;
+            height: 540px;
+        }
+        div div{
+            overflow: hidden;
+        }
+        .uno img{
+            opacity: 1;
+            transition: 2s opacity;
+        }
+        .un:hover img{
+            opacity: 0.2;
+        }
+        .dos img{
+            transform: translate(-360px, 0) scale(1);
+            transition: 1s transform;
+        }
+        .dos:hover img{
+            transform: scale(3);
+        }
+        .tres img{
+            transform: translate(-720px, 0) rotate(0);
+            transition: 2s 1s transform;
+        }
+        .tres:hover img{
+            transform: rotate(180deg);
+        }
+        .cuatre img{
+            transform: translate(0, -540px) skewX(0);
+            transition: 2s transform;
+        }
+        .cuatre:hover img{
+            transform: skewX(30deg);
+        }
+        .cinc img{
+            transform: translate(-360px, -540px) skewY(0);
+            transition: 2s transform;
+        }
+        .cinc:hover img{
+            transform: skewY(50deg);
+        }
+        .sis img{
+            transform: translate(-720px, -540px) scale(1);
+            transition: 2s transform;
+        }
+        .sis:hover img{
+            transform:scale(2);
+        }
+        i{
+           position: absolute;
+           right: 50px;
+           top: 50px;
+           padding: 30px;
+           color: orange;
+           transform: translateY(0);
+           transition: 3s transform;
+        }
+        i:hover{
+           transform: translateY(30px);
+           color:red;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="un">
+            <img src="img/jiji.jpg">
+        </div>
+        <div class="dos">
+            <img src="img/jiji.jpg">
+        </div>
+        <div class="tres">
+            <img src="img/jiji.jpg">
+        </div>
+        <div class="cuatre">
+            <img src="img/jiji.jpg">
+        </div>
+        <div class="cinc">
+            <img src="img/jiji.jpg">
+        </div>
+            <div class="sis">
+            <img src="img/jiji.jpg">
+        </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
